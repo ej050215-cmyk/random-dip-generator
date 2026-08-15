@@ -18,19 +18,41 @@
 
   <aside id="mockupPanel" class="mockup-panel">
     <h2 class="dipper-label">Dip Preview</h2>
-    <svg id="dipMockup" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" class="mockup-svg" aria-hidden="true">
+    <svg id="dipMockup" viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg" class="mockup-svg" aria-hidden="true">
       <defs>
         <clipPath id="tubClip">
-          <path d="M44,40 L156,40 L148,202 Q147,210 138,210 L62,210 Q53,210 52,202 Z"/>
+          <path d="M22,58 C22,80 258,80 258,58 L236,158 C236,174 44,174 44,158 Z"/>
         </clipPath>
+        <clipPath id="toppingClip">
+          <ellipse cx="140" cy="42" rx="118" ry="18"/>
+        </clipPath>
+        <linearGradient id="glassShine" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+          <stop offset="12%" stop-color="#ffffff" stop-opacity="0"/>
+          <stop offset="88%" stop-color="#ffffff" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#ffffff" stop-opacity="0.22"/>
+        </linearGradient>
       </defs>
+
       <g clip-path="url(#tubClip)">
-        <rect id="mockBase" x="20" y="95" width="160" height="125" fill="#E8C97A"/>
-        <path id="mockSauce" d="M20,38 L180,38 L180,118 Q150,135 118,112 Q86,90 54,115 Q35,128 20,110 Z" fill="#D6412B"/>
+        <rect id="mockBase" x="10" y="115" width="260" height="90" fill="#E8C97A"/>
+        <g id="mockBaseTexture"></g>
+        <path id="mockSauce" d="M10,60 L270,60 L270,102 Q220,116 170,100 Q120,85 70,106 Q40,118 10,103 Z" fill="#D6412B"/>
+        <g id="mockSauceTexture"></g>
+        <rect x="16" y="55" width="248" height="119" fill="url(#glassShine)"/>
+      </g>
+
+      <path class="tub-outline" d="M22,58 C22,80 258,80 258,58 L236,158 C236,174 44,174 44,158 Z" fill="none" stroke="#aebcc2" stroke-width="2.5"/>
+
+      <!-- The topping ellipse is drawn full (unclipped by the tub wall): its
+           back arc reads as the surface seen from above, its front arc sits
+           on top of the sauce band as a thin visible sliver from the side. -->
+      <g clip-path="url(#toppingClip)">
+        <rect id="mockTopping" x="10" y="10" width="260" height="65" fill="#4C7A3D"/>
         <g id="mockSpeckles"></g>
       </g>
-      <path class="tub-outline" d="M44,40 L156,40 L148,202 Q147,210 138,210 L62,210 Q53,210 52,202 Z" fill="none" stroke="#c9c2b8" stroke-width="3"/>
-      <rect class="tub-rim" x="36" y="28" width="128" height="16" rx="8" fill="#eef0f2" stroke="#c9c2b8" stroke-width="2"/>
+      <ellipse class="tub-rim" cx="140" cy="42" rx="118" ry="18" fill="none" stroke="#aebcc2" stroke-width="3"/>
+      <ellipse class="rim-shine" cx="105" cy="34" rx="45" ry="6" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="2"/>
     </svg>
     <div class="mockup-name" id="mockupName">—</div>
   </aside>
@@ -80,6 +102,16 @@
       Generate Dip
     </button>
   </main>
+
+  <button id="dipperBtn" class="dipper-btn" disabled title="Reveal perfect dipper">
+    <svg width="26" height="26" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M32 6 L57 54 L7 54 Z" fill="#f5deb3" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="32" cy="20" r="1.8" fill="#a9702a"/>
+      <circle cx="24" cy="32" r="1.6" fill="#a9702a"/>
+      <circle cx="40" cy="32" r="1.6" fill="#a9702a"/>
+      <circle cx="32" cy="40" r="1.6" fill="#a9702a"/>
+    </svg>
+  </button>
 
   <aside id="dipperPanel" class="dipper-panel">
     <h2 class="dipper-label">Perfect Dipper</h2>

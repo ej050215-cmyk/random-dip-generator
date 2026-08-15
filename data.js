@@ -169,3 +169,64 @@ const TOPPING_COLORS = {
   "Jalapenos": "#5A8A3D",
   "Grated Cheddar": "#E8A33D",
 };
+
+// Texture keys drive how each layer is drawn in the dip mockup (see
+// renderMockup in app.js): smooth bases get a glossy sheen, chunky ones get
+// lumpy blobs, grainy ones get fine stippling, sauces get a shine or flecks,
+// and each topping gets a shape that roughly matches its real form.
+
+const BASE_TEXTURES = {
+  "Sour Cream": "smooth",
+  "Greek Yogurt": "smooth",
+  "Cream Cheese": "smooth",
+  "Cottage Cheese": "chunky",
+  "Avocado": "smooth",
+  "Hummus": "grainy",
+  "White Bean Puree": "grainy",
+  "Mayonnaise": "smooth",
+  "Camembert": "chunky",
+  "Tsatsiki": "smooth",
+  "Baba Ganoush": "chunky",
+  "Burrata": "smooth",
+  "Chèvre": "chunky",
+  "Whipped Feta": "whipped",
+  "Curry Dip": "smooth",
+};
+
+const SAUCE_TEXTURES = {
+  "Sriracha": "glossy",
+  "Chipotle": "glossy",
+  "Honey Mustard": "glossy",
+  "Garlic Lemon": "glossy",
+  "BBQ": "glossy",
+  "Sweet Chili": "glossy",
+  "Green Pesto": "herb-fleck",
+  "Red Pesto": "chunky-fleck",
+  "Curry Sauce": "glossy",
+  "Hot Honey": "glossy",
+  "Salsa": "chunky-fleck",
+  "Soy Sauce": "glossy",
+  "Tabbouleh": "herb-fleck",
+  "Tapenade": "chunky-fleck",
+};
+
+const TOPPING_SHAPES = {
+  "Chopped Chives": "leaf",
+  "Toasted Pumpkin Seeds": "oval",
+  "Bacon Bits": "square",
+  "Feta Crumbles": "chunk",
+  "Fresh Herbs": "leaf",
+  "Roasted Garlic": "oval",
+  "Chili Flakes": "flake",
+  "Pomegranate Seeds": "dot",
+  "Grated Parmesan": "shred",
+  "Roasted Pine nuts": "oval",
+  "Basil": "leaf",
+  "Mint leaves": "leaf",
+  "Sage leaves": "leaf",
+  "Capers": "dot",
+  "Croutons": "square",
+  "Sesame Seeds": "oval",
+  "Jalapenos": "ring",
+  "Grated Cheddar": "shred",
+};
