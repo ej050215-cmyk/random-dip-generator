@@ -135,17 +135,17 @@ button:active {
   position: absolute;
   top: 50%;
   left: 100%;
-  margin-left: 20px;
-  width: 200px;
+  margin-left: 24px;
+  max-width: 420px;
+  width: 100%;
   transform: translateY(-50%) translateX(-16px);
   opacity: 0;
   pointer-events: none;
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
   background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 24px 16px;
-  box-shadow: 0 10px 30px rgba(107, 45, 107, 0.15), 0 0 0 1px var(--border);
+  border-radius: 20px;
+  padding: 40px 32px;
+  box-shadow: 0 10px 35px rgba(107, 45, 107, 0.1), 0 0 0 1px var(--border);
   text-align: center;
 }
 
@@ -155,22 +155,27 @@ button:active {
   pointer-events: auto;
 }
 
-.dipper-icon {
-  font-size: 2.2rem;
-  display: block;
-  margin-bottom: 8px;
-}
-
 .dipper-label {
-  font-size: 0.75rem;
+  margin: 0 0 20px;
+  font-size: 0.8rem;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--muted);
-  margin-bottom: 6px;
+}
+
+.dipper-icon {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
 }
 
 .dipper-name {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--text);
 }
@@ -179,13 +184,11 @@ button:active {
   animation: pop 0.25s ease;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .dipper-panel {
     position: static;
     margin-left: 0;
     margin-top: 16px;
-    width: 100%;
-    max-width: 420px;
     transform: translateY(-10px);
   }
 

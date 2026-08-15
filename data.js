@@ -63,14 +63,14 @@ const TOPPINGS = [
 
 const DIPPERS = ["Chips", "Nachos", "Bread", "Vegetables", "Crackers", "Pita", "Fries"];
 
-const DIPPER_ICONS = {
-  Chips: "🥔",
-  Nachos: "🌽",
-  Bread: "🍞",
-  Vegetables: "🥕",
-  Crackers: "🍘",
-  Pita: "🫓",
-  Fries: "🍟",
+const DIPPER_IMAGES = {
+  Chips: "images/chips.jpg",
+  Nachos: "images/nachos.jpg",
+  Bread: "images/bread.jpg",
+  Vegetables: "images/vegetables.jpg",
+  Crackers: "images/crackers.jpg",
+  Pita: "images/pita.jpg",
+  Fries: "images/fries.jpg",
 };
 
 const DIPPER_PRIORITY = ["Pita", "Bread", "Nachos", "Chips", "Crackers", "Vegetables", "Fries"];

@@ -35,7 +35,8 @@ function showDipper(dipper) {
   const icon = document.getElementById("dipperIcon");
   const name = document.getElementById("dipperName");
 
-  icon.textContent = DIPPER_ICONS[dipper];
+  icon.src = DIPPER_IMAGES[dipper];
+  icon.alt = dipper;
   name.textContent = dipper;
   name.classList.remove("pop");
   void name.offsetWidth; // restart animation
