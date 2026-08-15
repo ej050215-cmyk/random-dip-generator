@@ -8,6 +8,33 @@
 </head>
 <body>
   <div class="layout">
+  <button id="previewBtn" class="preview-btn" disabled title="Preview dip mockup">
+    <svg width="26" height="26" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M16 26 L48 26 L45 54 C44.5 57 42 59 39 59 L25 59 C22 59 19.5 57 19 54 Z" fill="#fdf5fa" stroke="#ffffff" stroke-width="2"/>
+      <path d="M17.5 40 L46.5 40 L45 54 C44.5 57 42 59 39 59 L25 59 C22 59 19.5 57 19 54 Z" fill="#e0a83f"/>
+      <ellipse cx="32" cy="26" rx="16" ry="4" fill="#ffffff" stroke="#e7d2e7" stroke-width="1.5"/>
+    </svg>
+  </button>
+
+  <aside id="mockupPanel" class="mockup-panel">
+    <h2 class="dipper-label">Dip Preview</h2>
+    <svg id="dipMockup" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" class="mockup-svg" aria-hidden="true">
+      <defs>
+        <clipPath id="tubClip">
+          <path d="M44,40 L156,40 L148,202 Q147,210 138,210 L62,210 Q53,210 52,202 Z"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#tubClip)">
+        <rect id="mockBase" x="20" y="95" width="160" height="125" fill="#E8C97A"/>
+        <path id="mockSauce" d="M20,38 L180,38 L180,118 Q150,135 118,112 Q86,90 54,115 Q35,128 20,110 Z" fill="#D6412B"/>
+        <g id="mockSpeckles"></g>
+      </g>
+      <path class="tub-outline" d="M44,40 L156,40 L148,202 Q147,210 138,210 L62,210 Q53,210 52,202 Z" fill="none" stroke="#c9c2b8" stroke-width="3"/>
+      <rect class="tub-rim" x="36" y="28" width="128" height="16" rx="8" fill="#eef0f2" stroke="#c9c2b8" stroke-width="2"/>
+    </svg>
+    <div class="mockup-name" id="mockupName">—</div>
+  </aside>
+
   <main class="card">
     <h1>
       <svg class="dip-icon" width="36" height="36" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">

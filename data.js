@@ -109,3 +109,63 @@ const SAUCE_DIPPER_SCORES = {
   "Tabbouleh": { Pita: 2, Vegetables: 1 },
   "Tapenade": { Crackers: 2, Chips: 1 },
 };
+
+// Dip mockup: rough real-world colors so the tub preview's three layers
+// (base at the bottom, sauce swirled above, topping speckled on the surface)
+// look roughly like the actual ingredient.
+
+const BASE_COLORS = {
+  "Sour Cream": "#F5F1E8",
+  "Greek Yogurt": "#FAF7EE",
+  "Cream Cheese": "#FFF7E3",
+  "Cottage Cheese": "#F1EDDD",
+  "Avocado": "#8FA86E",
+  "Hummus": "#E8C97A",
+  "White Bean Puree": "#EFE8D6",
+  "Mayonnaise": "#FDF6DE",
+  "Camembert": "#F3E3C0",
+  "Tsatsiki": "#E6EFDD",
+  "Baba Ganoush": "#A3835A",
+  "Burrata": "#FFFCF2",
+  "Chèvre": "#F5F0E2",
+  "Whipped Feta": "#F2ECDB",
+  "Curry Dip": "#E39A2E",
+};
+
+const SAUCE_COLORS = {
+  "Sriracha": "#D6412B",
+  "Chipotle": "#A8431E",
+  "Honey Mustard": "#E5A83A",
+  "Garlic Lemon": "#ECE49F",
+  "BBQ": "#5E2A1C",
+  "Sweet Chili": "#E0472F",
+  "Green Pesto": "#6B8E3D",
+  "Red Pesto": "#B5432A",
+  "Curry Sauce": "#D98A2B",
+  "Hot Honey": "#E8961E",
+  "Salsa": "#C0392B",
+  "Soy Sauce": "#3B2415",
+  "Tabbouleh": "#7A9450",
+  "Tapenade": "#3A3A2E",
+};
+
+const TOPPING_COLORS = {
+  "Chopped Chives": "#4C7A3D",
+  "Toasted Pumpkin Seeds": "#8A7A3D",
+  "Bacon Bits": "#7A3B2E",
+  "Feta Crumbles": "#F5F0E0",
+  "Fresh Herbs": "#4C7A3D",
+  "Roasted Garlic": "#D9B36B",
+  "Chili Flakes": "#C0392B",
+  "Pomegranate Seeds": "#A8172E",
+  "Grated Parmesan": "#F0DFA0",
+  "Roasted Pine nuts": "#C9A25B",
+  "Basil": "#3D6B2E",
+  "Mint leaves": "#4E8C5C",
+  "Sage leaves": "#6B8E5A",
+  "Capers": "#5C6B3D",
+  "Croutons": "#C9A25B",
+  "Sesame Seeds": "#E8DCC0",
+  "Jalapenos": "#5A8A3D",
+  "Grated Cheddar": "#E8A33D",
+};
